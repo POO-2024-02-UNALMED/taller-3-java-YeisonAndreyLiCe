@@ -1,5 +1,6 @@
 package taller3.televisores;
 
+
 public class TV {
     
     private Marca marca;
@@ -41,7 +42,7 @@ public class TV {
         if (!estado) {
             return;
         }
-        if (canal >= 0 || canal <= 120) {
+        if (canal >= 1 || canal <= 120) {
             this.canal = canal;
         }
     }
