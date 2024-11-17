@@ -29,16 +29,22 @@ public class TV {
     }
     
     public void setVolumen(int volumen) {
-        this.volumen = volumen;
+        if (volumen >= 0 && (volumen + this.volumen) <= 7) {
+            this.volumen = volumen;
+        }
     }
     
     public void setCanal(int canal) {
-        this.canal = canal;
+        if (estado) {
+            if (canal >= 1 && canal <= 120) {
+                this.canal = canal;
+            }
+        }
     }
 
     public static void setNumTV(int numTV) {
         TV.numTV = numTV;
-    }
+    }   
     
     public void turnOn() {
         estado = true;
