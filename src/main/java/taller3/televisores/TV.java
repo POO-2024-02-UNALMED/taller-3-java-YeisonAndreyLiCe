@@ -32,7 +32,7 @@ public class TV {
         if (!estado) {
             return;
         }
-        if (volumen >= 0 && volumen <= 7) {
+        if (volumen >= 0  || volumen <= 7) {
             this.volumen = volumen;
         }
     }
@@ -41,7 +41,7 @@ public class TV {
         if (!estado) {
             return;
         }
-        if (canal >= 0 && canal <= 120) {
+        if (canal >= 0 || canal <= 120) {
             this.canal = canal;
         }
     }
